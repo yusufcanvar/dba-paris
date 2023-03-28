@@ -977,7 +977,7 @@ a.imgHover:hover img,.bookPage .rightCol a.active img {
 Parameter name: css, moved to separate link ***/
 
 #top-space{
-    margin-top: 244px;
+    margin-top: 244px !important;
 }
 @media (max-width: 500px) {
     .rightCat {
