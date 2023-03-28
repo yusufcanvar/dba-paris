@@ -456,6 +456,7 @@ header {
     max-width: 40%;
 }
 
+
 .h .linkContainer img {
     visibility: hidden;
 }
@@ -975,3 +976,14 @@ a.imgHover:hover img,.bookPage .rightCol a.active img {
 /******* /css/test.less *********/
 /* ERROR : Value cannot be null.
 Parameter name: css, moved to separate link ***/
+
+@media (max-width: 500px) {
+    .rightCat {
+        position:static !important;
+        top: 61px;
+        text-align: left !important;
+
+    }
+  }
+
+  
