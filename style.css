@@ -1,7 +1,4 @@
 /******* /css/reset.css *********/
-*{
-    box-sizing:border-box;
-    }
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     display: block;
 }
@@ -424,14 +421,12 @@ em {
 }
 
 #container {
-    padding:  0 35px;
+    padding: 16px 35px 130px 35px;
 }
 
 #menu {
     font-size: 12px;
     position: relative;
-    padding:30px 0;
-    height:100%;
 }
 
 header {
@@ -981,12 +976,18 @@ a.imgHover:hover img,.bookPage .rightCol a.active img {
 /* ERROR : Value cannot be null.
 Parameter name: css, moved to separate link ***/
 
+#top-space{
+    margin-top: 244px;
+}
 @media (max-width: 500px) {
     .rightCat {
         position:static !important;
         top: 61px;
         text-align: left !important;
 
+    }
+    #top-space{
+        margin-top: 0;
     }
   }
 
