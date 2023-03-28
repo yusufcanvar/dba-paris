@@ -1,4 +1,7 @@
 /******* /css/reset.css *********/
+*{
+    box-sizing:border-box;
+    }
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     display: block;
 }
@@ -426,7 +429,6 @@ em {
 
 #menu {
     font-size: 12px;
-    padding-bottom: 400px;
     position: relative;
 }
 
