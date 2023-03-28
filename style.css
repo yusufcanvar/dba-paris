@@ -441,13 +441,13 @@ header {
 .mainCat {
     width: 781px;
     line-height: 17px;
-    margin: 20px 0 0;
+    margin: 35px 0 0;
     max-width: 60%;
 }
 
 .rightCat {
     position: absolute;
-    margin: 20px 0 0;
+    margin: 35px 0 0;
 
     right: 0;
     top: 61px;
@@ -979,7 +979,7 @@ a.imgHover:hover img,.bookPage .rightCol a.active img {
 Parameter name: css, moved to separate link ***/
 
 #top-space{
-    margin-top: 244px !important;
+    margin-top: 177px !important;
 }
 @media (max-width: 500px) {
     .rightCat {
