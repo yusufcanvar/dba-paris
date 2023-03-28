@@ -987,7 +987,7 @@ Parameter name: css, moved to separate link ***/
 
     }
     #top-space{
-        margin-top: 0;
+        margin-top: 0 !important;
     }
   }
 
