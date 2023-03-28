@@ -446,7 +446,7 @@ header {
     max-width: 60%;
 }
 
-#rightCat {
+.rightCat {
     position: absolute;
     right: 0;
     top: 61px;
