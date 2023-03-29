@@ -988,6 +988,7 @@ Parameter name: css, moved to separate link ***/
         position:static !important;
         top: 61px;
         text-align: left !important;
+        max-width: 100%;
 
     }
     #top-space{
