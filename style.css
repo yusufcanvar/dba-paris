@@ -977,6 +977,11 @@ Parameter name: css, moved to separate link ***/
 
 .Clients{
     background-color: #25ff33; color: #000000;
+    
+}
+.texts{
+    padding-left: 0.4rem;
+    padding-right: 0;
 }
 @media (max-width: 500px) {
     .rightCat {
@@ -987,6 +992,10 @@ Parameter name: css, moved to separate link ***/
     }
     #top-space{
         margin-top: 0 !important;
+    }
+    .texts{
+        padding-left: 0;
+        padding-right: 0.6rem;
     }
   }
 
