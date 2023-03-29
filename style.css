@@ -974,6 +974,11 @@ Parameter name: css, moved to separate link ***/
 #top-space{
     margin-top: 177px !important;
 }
+
+.Clients{
+    background-color: #25ff33; color: #000000;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
 @media (max-width: 500px) {
     .rightCat {
         position:static !important;
