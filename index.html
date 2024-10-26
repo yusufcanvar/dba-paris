@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6 {
         <h1 class="maintitle" style="margin-bottom: -0.28rem;">dba-paris.com</h1><br>
         <h2>Strategy & Image Consultancy</h2>
         <div class="recent mainCat">
-          <h2 class="title ">·  Clients  ·</h2><br>
+          <h2 class="title ">·  References  ·</h2><br>
           <span class="texts">ANDAM Fashion Award</span><br>
           <span class="texts">Bulgari</span><br>
           <span class="texts">Burberry</span><br>
@@ -202,12 +202,6 @@ h1,h2,h3,h4,h5,h6 {
           <span class="texts">Vogue Runway</span><br>
         </div>
         <div class="rightCat">
-          <h2 class="title" style="cursor: pointer;" onclick="toggleReferences()">· References ·</h2>
-          <div id="references-content" style="display: none; margin-top: 5px;">
-            <div class="linkContainer">
-              <span class="texts" style="color: #000000;">Images<br></span>
-            </div>
-          </div>
           <div id="top-space">
             <h2 class="title" style="cursor: pointer;" onclick="toggleInfos()">· Infos ·</h2>
             <div id="infos-content" style="display: none; margin-top: 5px;">
@@ -275,12 +269,6 @@ h1,h2,h3,h4,h5,h6 {
     }
   }
 
-
-  // References açılır içerik göster/gizle işlevi
-  function toggleReferences() {
-    var referencesContent = document.getElementById("references-content");
-    referencesContent.style.display = referencesContent.style.display === "none" || referencesContent.style.display === "" ? "block" : "none";
-  }
 
   // Infos açılır içerik göster/gizle işlevi
   function toggleInfos() {
