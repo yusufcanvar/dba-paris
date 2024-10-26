@@ -1,10 +1,50 @@
 <html>
 <head>
-<link href="./style.css" rel="stylesheet" type="text/css">
 <title>dba-paris.com</title>
 <meta name="viewport" content="width=device-width">
 
 <style>
+  html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html,button,input,select,textarea {
+    font-family: sans-serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+h2.title {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+body,html,for {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: Courier,Courier New,Monospace;
+    line-height: 1.2;
+}
+h1,h2,h3,h4,h5,h6 {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+#container {
+    padding: 16px 35px 130px 35px;
+}
   /* Açılır içerik stili */
   .dropdown-content {
     display: none; /* Başlangıçta gizli */
@@ -12,10 +52,123 @@
     margin-top: 10px;
     color: #000000;
   }
+  #menu {
+    font-size: 12px;
+    position: relative;
+}
+.maintitle {
+    font-size: 24px;
+    line-height: 40px;
+}
+.mainCat {
+    width: 781px;
+    line-height: 17px;
+    margin: 35px 0 0;
+    max-width: 60%;
+}
+
+.recent .highlight_color,.recent a {
+    background-color: #FEB2B2;
+}
+
+.h .recent .highlight_color,.h .recent a {
+    color: #FEB2B2;
+}
+#top-space{
+    margin-top: 177px !important;
+}
+
+.Clients{
+    color: #000000;
+    
+}
+.Clients:hover{
+    background-color: #25ff33;
+    
+}
+.yellow-bg:hover{
+    background-color: #fbfe34;
+    
+}
+.blueBg:hover{
+    background-color: #25fbff;
+    
+}
+.pingBg:hover{
+    background-color: #f376d1;
+    
+}
+
+.texts{
+    padding-left: 0.4rem;
+    padding-right: 0;
+}
+
+.h .linkContainer img {
+    visibility: hidden;
+}
+
+.linkContainer {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.linkContainer img {
+    max-width: 100%;
+}
+
+.h .linkContainer a.e {
+    color: #f8b250;
+}
+
+.linkContainer a,a.e {
+    background-color: #f8b250;
+    padding: 0 2px;
+}
+
+.linkContainer .linkPos {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+}
+#top-space{
+    margin-top: 177px !important;
+}
+
+.rightCat {
+    position: absolute;
+    margin: 35px 0 0;
+
+    right: 0;
+    top: 61px;
+    width: 600px;
+    text-align: right;
+    line-height: 17px;
+    max-width: 40%;
+}
+@media (max-width: 500px) {
+    .rightCat {
+        position:static !important;
+        top: 61px;
+        text-align: left !important;
+        max-width: 100%;
+
+    }
+    #top-space{
+        margin-top: 0 !important;
+    }
+    .texts{
+        padding-left: 0;
+        padding-right: 0.6rem;
+    }
+  }
+
+  
 </style>
 
 </head>
-<body id="body" class="rolled t3">
+<body class="rolled t3">
     <div id="container">
         
     <nav id="menu">
