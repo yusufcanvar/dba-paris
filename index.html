@@ -68,10 +68,11 @@
           </div>
 
           <div id="top-space">
-            <h2 class="title">·   Contacts   ·</h2>
-            <div class="linkContainer">
-              <span class="texts pingBg" style=" color: #000000;">Info@dba-paris.com</span><br>
+            <h2 class="title" style="cursor: pointer;" onclick="toggleEmail()">· Contact ·</h2>
+            <div id="email-container" style="display: none; margin-top: 5px;">
+              <a href="mailto:Info@dba-paris.com" style="color: #000000;">Info@dba-paris.com</a>
             </div>
+
           </div>
           
         </div>
@@ -95,5 +96,27 @@
     }
   }
 </script>
+<script>
+  // Açılır içeriği göster/gizle işlevi
+  function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdown-content");
+    if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+      dropdownContent.style.display = "block"; // İçeriği göster
+    } else {
+      dropdownContent.style.display = "none"; // İçeriği gizle
+    }
+  }
+
+  // Email göster/gizle işlevi
+  function toggleEmail() {
+    var emailContainer = document.getElementById("email-container");
+    if (emailContainer.style.display === "none" || emailContainer.style.display === "") {
+      emailContainer.style.display = "block"; // Emaili göster
+    } else {
+      emailContainer.style.display = "none"; // Emaili gizle
+    }
+  }
+</script>
+
 
 </html>
