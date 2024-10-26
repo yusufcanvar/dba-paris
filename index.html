@@ -4,6 +4,18 @@
 <title>dba-paris.com</title>
 <meta name="viewport" content="width=device-width">
 
+<style>
+  /* Açılır içerik stili */
+  .dropdown-content {
+    display: none; /* Başlangıçta gizli */
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    color: #000000;
+  }
+</style>
+
 </head>
 <body id="body" class="rolled t3">
     <div id="container">
@@ -12,56 +24,79 @@
         <h1 class="maintitle" style="margin-bottom: -0.28rem;">dba-paris.com</h1><br>
         <h2>Strategy & Image Consultancy</h2>
         <div class="recent mainCat">
-	<h2 class="title">·  Clients  ·</h2><br>
-      <span class="Clients texts">ANDAM Fashion Award</span><br>
-      <span class="Clients texts">Bulgari</span><br>
-      <span class="Clients texts">Burberry</span><br>
-      <span class="Clients texts">Diesel</span><br>
-      <span class="Clients texts">Galeries Lafayettes</span><br>
-      <span class="Clients texts">Givenchy</span><br>
-      <span class="Clients texts">Louis Vuitton</span><br>
-      <span class="Clients texts">LVMH Fashion Ventures</span><br>
-      <span class="Clients texts">Maison Margiela</span><br>
-      <span class="Clients texts">Mary Katrantzou</span><br>
-      <span class="Clients texts">Ministry of French Culture</span><br>
-      <span class="Clients texts">Mira Mikati</span><br>
-      <span class="Clients texts">Nensi Dojaka</span><br>
-      <span class="Clients texts">Nodaleto</span><br>
-      <span class="Clients texts">OTB Group</span><br>
-      <span class="Clients texts">Pellat-Finet</span><br>
-      <span class="Clients texts">Prada</span><br>
-      <span class="Clients texts">Pucci</span><br>
-      <span class="Clients texts">Rizzoli New York</span><br>
-      <span class="Clients texts">Ruslan Baginskiy</span><br>
-      <span class="Clients texts">Versace</span><br>
-      <span class="Clients texts">Vitrolabs</span><br>
-      <span class="Clients texts">Vogue Italia</span><br>
-      <span class="Clients texts">Vogue Runway</span><br>
-      
-      
-      </div>
-      <div class="rightCat">
-        <h2 class="title">·   References   ·</h2>
-        <div class="linkContainer">
-          <span class="texts" style="background-color: #fbfe34; color: #000000;">Images<br></span>
-      </div>
-        <h2 class="title">·   Infos   ·</h2>
-        <div class="linkContainer">
-            <span class="texts" style="background-color: #25fbff; color: #000000;">Strategy & Image</span><br>
-            <span class="texts" style="background-color: #25fbff; color: #000000;">Dryce<br></span>
+          <h2 class="title">·  Clients  ·</h2><br>
+          <span class="Clients texts">ANDAM Fashion Award</span><br>
+          <span class="Clients texts">Bulgari</span><br>
+          <span class="Clients texts">Burberry</span><br>
+          <span class="Clients texts">Diesel</span><br>
+          <span class="Clients texts">Galeries Lafayettes</span><br>
+          <span class="Clients texts">Givenchy</span><br>
+          <span class="Clients texts">Louis Vuitton</span><br>
+          <span class="Clients texts">LVMH Fashion Ventures</span><br>
+          <span class="Clients texts">Maison Margiela</span><br>
+          <span class="Clients texts">Mary Katrantzou</span><br>
+          <span class="Clients texts">Ministry of French Culture</span><br>
+          <span class="Clients texts">Mira Mikati</span><br>
+          <span class="Clients texts">Nensi Dojaka</span><br>
+          <span class="Clients texts">Nodaleto</span><br>
+          <span class="Clients texts">OTB Group</span><br>
+          <span class="Clients texts">Pellat-Finet</span><br>
+          <span class="Clients texts">Prada</span><br>
+          <span class="Clients texts">Pucci</span><br>
+          <span class="Clients texts">Rizzoli New York</span><br>
+          <span class="Clients texts">Ruslan Baginskiy</span><br>
+          <span class="Clients texts">Versace</span><br>
+          <span class="Clients texts">Vitrolabs</span><br>
+          <span class="Clients texts">Vogue Italia</span><br>
+          <span class="Clients texts">Vogue Runway</span><br>
+        </div>
+        <div class="rightCat">
+          <h2 class="title">·   References   ·</h2>
+          <div class="linkContainer">
+            <span class="texts" style="background-color: #fbfe34; color: #000000;">Images<br></span>
+          </div>
+          <h2 class="title">·   Infos   ·</h2>
+          <div class="linkContainer">
+              <span class="texts" style="background-color: #25fbff; color: #000000;">Strategy & Image</span><br>
+              <span class="texts" style="background-color: #25fbff; color: #000000;" onclick="toggleDropdown()">Dryce<br></span>
+              <!-- Açılır içerik -->
+              <div id="dropdown-content" class="dropdown-content" style="text-align: left;">
+                <p>Dubbed the « Fashion whisperer » by VOGUE magazine, DRYCE is a creative director and a luxury strategist who aims at POSITIONING AND ELEVATING BRAND PURPOSE THROUGH IMAGE AND STRATEGY.</p>
+                <p>Based in Paris, the French-Moroccan consultant consistently connects the dots between emerging designers, trends, brands and fashion and luxury historical knowledge.</p>
+                <p>Dryce’s innovative practice and deep curiosity has made him one of the most trusted thinkers in his field for the past decade.</p>
+                <p>First known for his role as a consultant for the ANDAM Fashion Award where he help reveal designer such as Anthony Vaccarello, Alexandre Matiussi (Ami Paris), Coperni… Dryce has collaborated on fashion shows, brands and products launches and consulted for numerous publications, including VOGUE ITALIA and VOGUE RUNWAY.</p>
+                <p>Applying his philosophy of ambition in his collaborations with brands such as PRADA, VERSACE and VUITTON, Dryce’s keen eye for trend shifts makes him a kind of oracle for our time.</p>
+                <p>Dryce keeps pushing the fashion world forward by constantly questioning its purpose, applying his unique expertise and activating his network to break the boundaries between fashion and society and peek into a possible future.</p>
+              </div>
+          </div>
+
+          <div id="top-space">
+            <h2 class="title">·   Contacts   ·</h2>
+            <div class="linkContainer">
+              <span class="texts" style="background-color: #f376d1; color: #000000;">Info@dba-paris.com</span><br>
+            </div>
+          </div>
+          
         </div>
 
-        <div id="top-space">
-        <h2 class="title">·   Contacts   ·</h2>
-        <div class="linkContainer">
-          <span class="texts" style="background-color: #f376d1; color: #000000;">Info@dba-paris.com</span><br>
-      </div>
-      </div>
-    </div>
-  </div> 
+        
+
+    </div> 
     </nav>
     
     </div>
     
 </body>
+<script>
+  // Açılır içeriği göster/gizle işlevi
+  function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdown-content");
+    if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+      dropdownContent.style.display = "block"; // İçeriği göster
+    } else {
+      dropdownContent.style.display = "none"; // İçeriği gizle
+    }
+  }
+</script>
+
 </html>
