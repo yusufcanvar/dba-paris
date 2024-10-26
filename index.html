@@ -202,28 +202,33 @@ h1,h2,h3,h4,h5,h6 {
           <span class="texts">Vogue Runway</span><br>
         </div>
         <div class="rightCat">
-          <h2 class="title">·   References   ·</h2>
-          <div class="linkContainer">
-            <span class="texts" style="color: #000000;">Images<br></span>
+          <h2 class="title" style="cursor: pointer;" onclick="toggleReferences()">· References ·</h2>
+          <div id="references-content" style="display: none; margin-top: 5px;">
+            <div class="linkContainer">
+              <span class="texts" style="color: #000000;">Images<br></span>
+            </div>
           </div>
-          <h2 class="title ">·   Infos   ·</h2>
-          <div class="linkContainer">
-              <span class="texts " style="color: #000000;" onclick="toggleDropdown()">Dryce<br></span>
-              <!-- Açılır içerik -->
-              <div id="dropdown-content" class="dropdown-content" style="text-align: left; font-size: 10px;">
-                <p>Dubbed the « Fashion whisperer » by VOGUE magazine, DRYCE is a creative director and a luxury strategist who aims at POSITIONING AND ELEVATING BRAND PURPOSE THROUGH IMAGE AND STRATEGY.</p>
-                <p>Based in Paris, the French-Moroccan consultant consistently connects the dots between emerging designers, trends, brands and fashion and luxury historical knowledge.</p>
-                <p>Dryce’s innovative practice and deep curiosity has made him one of the most trusted thinkers in his field for the past decade.</p>
-                <p>First known for his role as a consultant for ANDAM Fashion Award where he help reveal designer such as Anthony Vaccarello, Alexandre Matiussi (Ami Paris) and Coperni… Dryce has collaborated on fashion shows, brands and products launches and consulted for numerous publications, including VOGUE ITALIA and VOGUE RUNWAY.</p>
-                <p>Applying his philosophy of ambition in his collaborations with brands such as PRADA, VERSACE and VUITTON, Dryce’s keen eye for trend shifts makes him a kind of oracle for our time.</p>
-                <p>Dryce keeps pushing the fashion world forward by constantly questioning its purpose, applying his unique expertise and activating his network to break the boundaries between fashion and society and peek into a possible future.</p>
+          <div id="top-space">
+            <h2 class="title" style="cursor: pointer;" onclick="toggleInfos()">· Infos ·</h2>
+            <div id="infos-content" style="display: none; margin-top: 5px;">
+              <div class="linkContainer">
+                  <span class="texts " style="color: #000000;" onclick="toggleDropdown()">Dryce<br></span>
+                  <!-- Açılır içerik -->
+                  <div id="dropdown-content" class="dropdown-content" style="text-align: left; font-size: 10px;">
+                    <p>Dubbed the « Fashion whisperer » by VOGUE magazine, DRYCE is a creative director and a luxury strategist who aims at POSITIONING AND ELEVATING BRAND PURPOSE THROUGH IMAGE AND STRATEGY.</p>
+                    <p>Based in Paris, the French-Moroccan consultant consistently connects the dots between emerging designers, trends, brands and fashion and luxury historical knowledge.</p>
+                    <p>Dryce’s innovative practice and deep curiosity has made him one of the most trusted thinkers in his field for the past decade.</p>
+                    <p>First known for his role as a consultant for ANDAM Fashion Award where he help reveal designer such as Anthony Vaccarello, Alexandre Matiussi (Ami Paris) and Coperni… Dryce has collaborated on fashion shows, brands and products launches and consulted for numerous publications, including VOGUE ITALIA and VOGUE RUNWAY.</p>
+                    <p>Applying his philosophy of ambition in his collaborations with brands such as PRADA, VERSACE and VUITTON, Dryce’s keen eye for trend shifts makes him a kind of oracle for our time.</p>
+                    <p>Dryce keeps pushing the fashion world forward by constantly questioning its purpose, applying his unique expertise and activating his network to break the boundaries between fashion and society and peek into a possible future.</p>
+                  </div>
               </div>
+            </div>
           </div>
-
           <div id="top-space">
             <h2 class="title " style="cursor: pointer;" onclick="toggleEmail()">· Contact ·</h2>
             <div id="email-container" style="display: none; margin-top: 5px;">
-              <a href="mailto:Info@dba-paris.com" style="color: #000000;"><span>&nbsp;Info@dba-paris.com</span></a>
+              <a href="mailto:Info@dba-paris.com" style="color: #000000;"><span>Info@dba-paris.com</span></a>
             </div>
 
           </div>
@@ -269,6 +274,20 @@ h1,h2,h3,h4,h5,h6 {
       emailContainer.style.display = "none"; // Emaili gizle
     }
   }
+
+
+  // References açılır içerik göster/gizle işlevi
+  function toggleReferences() {
+    var referencesContent = document.getElementById("references-content");
+    referencesContent.style.display = referencesContent.style.display === "none" || referencesContent.style.display === "" ? "block" : "none";
+  }
+
+  // Infos açılır içerik göster/gizle işlevi
+  function toggleInfos() {
+    var infosContent = document.getElementById("infos-content");
+    infosContent.style.display = infosContent.style.display === "none" || infosContent.style.display === "" ? "block" : "none";
+  }
+
 </script>
 
 
