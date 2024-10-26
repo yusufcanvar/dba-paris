@@ -841,7 +841,7 @@ section.info5 {
     padding-left: 15px;
 }
 
-.info5 .submenu .active a,.rightArticleLink,.info5 .articleTitle,.yellowBg,a.bookLink:hover {
+.info5 .submenu .active a,.rightArticleLink,.info5 .articleTitle,a.bookLink:hover {
     background-color: #FEEA3D;
 }
 
@@ -976,9 +976,26 @@ Parameter name: css, moved to separate link ***/
 }
 
 .Clients{
-    background-color: #25ff33; color: #000000;
+    color: #000000;
     
 }
+.Clients:hover{
+    background-color: #25ff33;
+    
+}
+.yellowBg:hover{
+    background-color: #fbfe34;
+    
+}
+.blueBg:hover{
+    background-color: #25fbff;
+    
+}
+.pingBg:hover{
+    background-color: #f376d1;
+    
+}
+
 .texts{
     padding-left: 0.4rem;
     padding-right: 0;
